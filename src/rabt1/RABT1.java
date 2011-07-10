@@ -14,6 +14,10 @@ public class RABT1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Invoice invoice3 = new Invoice("Amazing Software", 5000, "January 18, 2009");
+        Invoice invoice1 = new Invoice("Best Programs", 4000, "Feburary 18, 1009");
+        Invoice invoice2 = new Invoice("Champion Code", 3000, "March 18, 2009");
+        
+        
     }
 }
