@@ -14,15 +14,17 @@ public class RABT1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // Instantiate 3 new invoices
         Invoice invoice1 = new Invoice("Amazing Software", 5000, "January 18, 2009");
         Invoice invoice2 = new Invoice("Best Programs", 4000, "Feburary 18, 1009");
         Invoice invoice3 = new Invoice("Champion Code", 3000, "March 18, 2009");
         
-        System.out.println("Invoice No. " + invoice1.getInvoiceNumber());
+        // Out put all of the instance vars to be sure they are correct
+        System.out.println("\nInvoice No. " + invoice1.getInvoiceNumber());        
         System.out.println(invoice1.getComapanyName());
         System.out.format("$%.2f\n", invoice1.getAmountDue());
         System.out.println(invoice1.getChargeDate());
-        
+
         System.out.println("\nInvoice No. " + invoice2.getInvoiceNumber());        
         System.out.println(invoice2.getComapanyName());
         System.out.format("$%.2f\n", invoice2.getAmountDue());
@@ -33,6 +35,7 @@ public class RABT1 {
         System.out.format("$%.2f\n", invoice3.getAmountDue());
         System.out.println(invoice3.getChargeDate());
         
+        // Output the invoice count
         System.out.println("\nInvoice count: " + Invoice.getNumberOfInvoices());
 
     }
