@@ -17,7 +17,14 @@ public class Invoice {
     private int invoiceNumber;
     
     public Invoice() {
-        invoiceNumber = Invoice.numberOfInvoices;
+        invoiceNumber = ++Invoice.numberOfInvoices;
+    }
+    
+    public Invoice(String name, int amount, String date) {
+       invoiceNumber = ++Invoice.numberOfInvoices;
+       companyName = name;
+       amountDue = amount;
+       chargeDate = date;
     }
     
     public String getComapanyName() {
@@ -46,6 +53,10 @@ public class Invoice {
     
     public void setChargeDate(String date) {
         chargeDate = date;
+    }
+    
+    public static int getNumberOfInvoices() {
+        return Invoice.numberOfInvoices;
     }
     
 }
